@@ -1,0 +1,5 @@
+.DS_Store
+
+datasets/
+metastore_db/
+derby.log
