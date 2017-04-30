@@ -23,20 +23,20 @@ mainSchema = StructType([StructField('color', StringType(), True),
                     StructField('country', StringType(), True),
                     StructField('contentRating', StringType(), True),
                     StructField('budget', IntegerType(), True),
-                    StructField('titleYear', IntegerType(), True),
+                    StructField('titleYear', LongType(), True),
                     StructField('actor2FacebookLikes', IntegerType(), True),
                     StructField('imdbScore', FloatType(), True),
                     StructField('aspectRatio', FloatType(), True),
                     StructField('movieFacebookLikes', IntegerType(), True)
                 ])
 
-ratingsSchema = StructType([StructField('userId', IntegerType(), True),
-                    StructField('movieId', IntegerType(), True),
-                    StructField('rating', FloatType(), True),
-                    StructField('timestamp', IntegerType(), True)
-                ])
-
-movieSchema = StructType([StructField('movieId', IntegerType(), True),
-                    StructField('movieTitle2', StringType(), True),
-                    StructField('genres', StringType(), True)
-                ])
+# ratingsSchema = StructType([StructField('userId', IntegerType(), True),
+#                     StructField('movieId', IntegerType(), True),
+#                     StructField('rating1', FloatType(), True),
+#                     StructField('timestamp', IntegerType(), True)
+#                 ])
+#
+# movieSchema = StructType([StructField('movieId', IntegerType(), True),
+#                     StructField('movieTitle2', StringType(), True),
+#                     StructField('genres', StringType(), True)
+#                 ])
