@@ -56,6 +56,7 @@ def schema_rating(spark):
     top_actor1_sum = spark.sql("SELECT actor1Name FROM reducedActorList") \
         .groupBy("actor1Name") \
         .count()
+        main.create
     top_actor1_list = top_actor1_gross.join(top_actor1_sum, top_actor1_gross.actor1Name == top_actor1_sum.actor1Name, 'inner') \
         .drop(top_actor1_sum.actor1Name) \
         .orderBy("avg(gross)", ascending=False) \
